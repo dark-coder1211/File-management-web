@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Management - Auto Sorter</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- JSZip library to construct organized folders in browser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>File Management Sorter</h1>
+    <p>Select a local folder on your computer to automatically group files into sub-folders based on their extension!</p>
+
+    <div class="drop-zone">
+      <input type="file" id="folderInput" webkitdirectory directory multiple>
+      <label for="folderInput" class="btn">📁 Choose Folder to Sort</label>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
